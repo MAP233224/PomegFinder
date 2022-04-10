@@ -13,4 +13,4 @@ Range of acceptable values for each parameter:
 - LEVEL_MIN = 1
 - LEVEL_MAX = 100
 - BASE_STAT_MIN = 5
-- BASE_STAT_MAX = 250
+- BASE_STAT_MAX = 255
