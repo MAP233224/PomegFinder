@@ -1,5 +1,7 @@
 # PomegFinder
-Parameter finder for performing the Pomeg Glitch in Pokémon DPPT  
+Parameter finder for performing the Pomeg Glitch in Pokémon DPPT.  
+
+Here's the most human-optimized way to perform the Pomeg Glitch in these games: https://www.youtube.com/watch?v=ipg3J3COXHQ
 
 When performing the Pomeg Glitch in Pokémon Diamond, Pearl (all languages) or Platinum (japanese and english only), you need to lose at least 2 HP from using a single Pomeg Berry when you only have 1 HP remaining.
 This application helps you find the requirements necessary for a specific Pokémon, provided a range of levels, the amount of HP EVs you're willing to give it prior to performing the glitch, and its HP base stat.  
