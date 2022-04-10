@@ -13,7 +13,7 @@ typedef uint64_t u64;
 #define LEVEL_MIN 1
 #define LEVEL_MAX 100
 #define BASE_STAT_MIN 5
-#define BASE_STAT_MAX 250
+#define BASE_STAT_MAX 255
 
 static void ScanValue(u8* message, u32* value, u8* format, u64 min, u64 max) {
 	/* General purpose safe scan. Instruction message, value to change, string format and max value */
@@ -51,7 +51,7 @@ int main() {
 		u32 base_hp = 80;
 		ScanValue("Level min: ", &level_min, "%u", LEVEL_MIN, LEVEL_MAX);
 		ScanValue("Level max: ", &level_max, "%u", LEVEL_MIN, LEVEL_MAX);
-		ScanValue("EVs (-10): ", &evs, "%u", EVS_MIN, EVS_MAX);
+		ScanValue("EVs (+10): ", &evs, "%u", EVS_MIN, EVS_MAX);
 		ScanValue("Base HP: ", &base_hp, "%u", BASE_STAT_MIN, BASE_STAT_MAX);
 
 		if (level_min > level_max) //swap them
@@ -63,7 +63,7 @@ int main() {
 
 		for (u32 level = level_min; level <= level_max; level++) {
 			for (u32 iv = 0; iv <= 31; iv++) {
-				if ((IvToStat_HP(base_hp, iv, evs+10, level) - IvToStat_HP(base_hp, iv, evs, level)) == 2) {
+				if ((IvToStat_HP(base_hp, iv, evs+10, level) - IvToStat_HP(base_hp, iv, evs, level)) >= 2) {
 					printf("\nLv. %-6u IV = %u", level, iv);
 					results++;
 				}
