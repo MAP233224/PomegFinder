@@ -12,7 +12,7 @@ typedef uint64_t u64;
 #define EVS_MAX 245
 #define LEVEL_MIN 1
 #define LEVEL_MAX 100
-#define BASE_STAT_MIN 5
+#define BASE_STAT_MIN 10
 #define BASE_STAT_MAX 255
 
 static void ScanValue(u8* message, u32* value, u8* format, u64 min, u64 max) {
