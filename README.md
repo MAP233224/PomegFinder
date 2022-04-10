@@ -14,5 +14,5 @@ Range of acceptable values for each parameter:
 - EVS_MAX = 245
 - LEVEL_MIN = 1
 - LEVEL_MAX = 100
-- BASE_STAT_MIN = 5
+- BASE_STAT_MIN = 10
 - BASE_STAT_MAX = 255
